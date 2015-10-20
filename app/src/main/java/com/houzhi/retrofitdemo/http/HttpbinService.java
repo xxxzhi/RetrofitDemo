@@ -33,8 +33,8 @@ public interface HttpbinService {
     @POST("/post")
     Call<HttpbinRequest> testPost();
 
-    @GET("/get?arg1={arg1}")
-    Call<HttpbinRequest> testManipulation(@Path("arg1") String arg1, @Query("arg2") String arg2, @QueryMap Map<String, String> map);
+    @GET("/{path}")
+    Call<HttpbinRequest> testManipulation(@Path("path") String path, @Query("arg1") String arg1, @QueryMap Map<String, String> map);
 
     /**
      * 　利用Post 请求 使用Field参数
@@ -66,7 +66,6 @@ public interface HttpbinService {
     @Headers("Cache-Control: max-age=640000")
     @GET("/get")
     Call<HttpbinRequest> testHeaderMethod();
-
 
 
     @Headers({

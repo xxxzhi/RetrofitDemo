@@ -7,7 +7,7 @@
 
     <TextView
         style="@style/ExampleTitle"
-        android:text="@string/field_introduce" />
+        android:text="@string/multipart_introduce" />
 
 
     <View style="@style/SplitLine" />
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:gravity="center"
-        android:text="@string/input_field_value" />
+        android:text="@string/input_form_body" />
 
     <View style="@style/SplitLine" />
 

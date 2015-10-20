@@ -3,8 +3,6 @@ package com.houzhi.retrofitdemo.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-
 
 /**
  * Created by houzhi on 15-10-20.
@@ -66,10 +64,10 @@ public class Form {
 
     @Override
     public String toString() {
-        return "Form{" + "\n"+
-                "log='" + log + '\'' + "\n"+
-                ", pwd='" + pwd + '\'' + "\n"+
-                ", type='" + type + '\'' + "\n"+
-                '}';
+        return "Form{" + "\n" +
+                "    log='" + log + '\'' + "" +
+                ",\n    pwd='" + pwd + '\'' + "" +
+                ",\n    type='" + type + '\'' +
+                '}' + "\n";
     }
 }

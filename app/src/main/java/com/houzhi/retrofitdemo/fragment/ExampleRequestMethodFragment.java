@@ -18,7 +18,8 @@ public class ExampleRequestMethodFragment extends BaseRequestExampleFragment {
     Call tCall = null;
 
 
-    @OnClick(R.id.bt_get) void onGet(){
+    @OnClick(R.id.bt_get)
+    void onGet() {
 
         //如果不用Call会出现Unable to create call adapter for class　异常
 //        Call<User> t = service.exampleMethodGet();
@@ -36,7 +37,8 @@ public class ExampleRequestMethodFragment extends BaseRequestExampleFragment {
 
     }
 
-    @OnClick(R.id.bt_post) void onPost(){
+    @OnClick(R.id.bt_post)
+    void onPost() {
 
         Call<HttpbinRequest> call = httpbinService.testPost();
         processCall(call);

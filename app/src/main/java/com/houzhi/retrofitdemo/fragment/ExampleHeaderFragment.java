@@ -9,9 +9,6 @@ import android.widget.TextView;
 import com.houzhi.retrofitdemo.R;
 import com.houzhi.retrofitdemo.model.HttpbinRequest;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import butterknife.Bind;
 import butterknife.OnClick;
 import retrofit.Call;

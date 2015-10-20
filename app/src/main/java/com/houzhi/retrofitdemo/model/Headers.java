@@ -2,7 +2,6 @@ package com.houzhi.retrofitdemo.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
  * Created by houzhi on 15-10-20.
@@ -26,90 +25,70 @@ public class Headers {
     private String UserAgent;
 
     /**
-     *
-     * @return
-     * The Accept
+     * @return The Accept
      */
     public String getAccept() {
         return Accept;
     }
 
     /**
-     *
-     * @param Accept
-     * The Accept
+     * @param Accept The Accept
      */
     public void setAccept(String Accept) {
         this.Accept = Accept;
     }
 
     /**
-     *
-     * @return
-     * The ContentLength
+     * @return The ContentLength
      */
     public String getContentLength() {
         return ContentLength;
     }
 
     /**
-     *
-     * @param ContentLength
-     * The Content-Length
+     * @param ContentLength The Content-Length
      */
     public void setContentLength(String ContentLength) {
         this.ContentLength = ContentLength;
     }
 
     /**
-     *
-     * @return
-     * The ContentType
+     * @return The ContentType
      */
     public String getContentType() {
         return ContentType;
     }
 
     /**
-     *
-     * @param ContentType
-     * The Content-Type
+     * @param ContentType The Content-Type
      */
     public void setContentType(String ContentType) {
         this.ContentType = ContentType;
     }
 
     /**
-     *
-     * @return
-     * The Host
+     * @return The Host
      */
     public String getHost() {
         return Host;
     }
 
     /**
-     *
-     * @param Host
-     * The Host
+     * @param Host The Host
      */
     public void setHost(String Host) {
         this.Host = Host;
     }
 
     /**
-     *
-     * @return
-     * The UserAgent
+     * @return The UserAgent
      */
     public String getUserAgent() {
         return UserAgent;
     }
 
     /**
-     *
-     * @param UserAgent
-     * The User-Agent
+     * @param UserAgent The User-Agent
      */
     public void setUserAgent(String UserAgent) {
         this.UserAgent = UserAgent;
@@ -117,12 +96,12 @@ public class Headers {
 
     @Override
     public String toString() {
-        return "Headers{" + "\n"+
-                "Accept='" + Accept + '\'' + "\n"+
-                ", ContentLength='" + ContentLength + '\'' + "\n"+
-                ", ContentType='" + ContentType + '\'' + "\n"+
-                ", Host='" + Host + '\'' + "\n"+
-                ", UserAgent='" + UserAgent + '\'' + "\n"+
-                '}';
+        return "Headers{" + "\n" +
+                "   Accept='" + Accept + '\'' +
+                ",\n    ContentLength='" + ContentLength + '\'' +
+                ",\n    ContentType='" + ContentType + '\'' +
+                ",\n    Host='" + Host + '\'' +
+                ",\n    UserAgent='" + UserAgent + '\'' +
+                '}' + "\n";
     }
 }

@@ -21,8 +21,11 @@ import retrofit.Call;
  */
 public class ExampleManipulationFragment extends BaseRequestExampleFragment {
 
-    @Bind(R.id.et_arg1)
-    TextView etArg1;
+    @Bind(R.id.et_path)
+    TextView etPath;
+
+    @Bind(R.id.et_value1)
+    TextView etValue1;
 
     @Bind(R.id.et_value2)
     TextView etValue2;
@@ -32,14 +35,15 @@ public class ExampleManipulationFragment extends BaseRequestExampleFragment {
 
     @OnClick(R.id.bt_request)
     void request() {
-        final String arg1 = etArg1.getText().toString();
+        final String path = etPath.getText().toString();
 
         final Map<String, String> map = new HashMap<>();
         map.put("arg2", etValue2.getText().toString());
+        map.put("arg3", etValue3.getText().toString());
 
-        final String arg2 = etValue3.getText().toString();
+        final String arg1 = etValue1.getText().toString();
 
-        Call<HttpbinRequest> call = httpbinService.testManipulation(arg1, arg2, map);
+        Call<HttpbinRequest> call = httpbinService.testManipulation(path, arg1, map);
         processCall(call);
 
     }

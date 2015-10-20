@@ -4,8 +4,6 @@ package com.houzhi.retrofitdemo.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-
 /**
  * Created by houzhi on 15-10-20.
  */
@@ -152,14 +150,14 @@ public class HttpbinRequest {
     @Override
     public String toString() {
         return "HttpbinRequest{" + "\n" +
-                "args=" + (args != null ? args.toString() : "null" )+ "\n" +
-                ", data='" + data + '\'' + "\n" +
-                ", files=" + (files != null ? files.toString() : "null") + "\n" +
-                ", form=" + (form != null ? form.toString() : "null")+ "\n" +
-                ", headers=" + (headers != null ? headers.toString() : "null")+ "\n" +
-                ", json=" + json + "\n" +
-                ", origin='" + origin + '\'' + "\n" +
-                ", url='" + url + '\'' + "\n" +
+                "    args=" + (args != null ? args.toString() : "null") + "" +
+                ",\n    data='" + data + '\'' +
+                ",\n    files=" + (files != null ? files.toString() : "null") +
+                ",\n    form=" + (form != null ? form.toString() : "null") +
+                ",\n    headers=" + (headers != null ? headers.toString() : "null") +
+                ",\n    json=" + json +
+                ",\n    origin='" + origin + '\'' +
+                ",\n    url='" + url + '\'' +
                 '}';
     }
 }

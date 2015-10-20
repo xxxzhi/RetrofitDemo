@@ -6,17 +6,39 @@
     tools:context=".fragment.ExampleRequestMethodFragment">
 
     <TextView
-        android:text="@string/manipulation_introduce"
-        style="@style/ExampleTitle" />
+        style="@style/ExampleTitle"
+        android:text="@string/manipulation_introduce" />
 
     <!-- TODO: Update blank fragment layout -->
     <EditText
-        android:id="@+id/et_arg1"
+        android:id="@+id/et_path"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="arg1,test path"
-        android:hint="@string/input_request_path" />
+        android:hint="@string/input_request_path"
+        android:text="get" />
+
+    <View style="@style/SplitLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/et_key1"
+            style="@style/LinearItem"
+            android:hint="arg1"
+            android:text="arg1" />
+
+        <EditText
+            android:id="@+id/et_value1"
+            style="@style/LinearItem"
+            android:hint="arg1  Test Query"
+            android:text="arg1  Test Query" />
+
+    </LinearLayout>
+
     <View style="@style/SplitLine" />
 
     <TextView
@@ -28,6 +50,9 @@
 
     <View style="@style/SplitLine" />
 
+
+    <View style="@style/SplitLine" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,16 +61,17 @@
         <TextView
             android:id="@+id/et_key2"
             style="@style/LinearItem"
-            android:text="arg3"
-            android:hint="arg3" />
+            android:hint="arg2"
+            android:text="arg2" />
 
         <EditText
             android:id="@+id/et_value2"
             style="@style/LinearItem"
-            android:text="arg3 test"
-            android:hint="arg3" />
+            android:hint="arg2"
+            android:text="arg2 test" />
 
     </LinearLayout>
+
     <View style="@style/SplitLine" />
 
     <LinearLayout
@@ -57,13 +83,13 @@
             android:id="@+id/et_key3"
             style="@style/LinearItem"
             android:hint="Key"
-            android:text="arg2" />
+            android:text="arg3" />
 
         <EditText
             android:id="@+id/et_value3"
             style="@style/LinearItem"
-            android:text="arg2 Test Query"
-            android:hint="arg2 Test Query" />
+            android:hint="arg3"
+            android:text="arg3" />
 
     </LinearLayout>
 
