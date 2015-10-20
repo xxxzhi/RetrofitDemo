@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.ExampleRequestMethodFragment">
+
+    <TextView
+        android:text="@string/manipulation_introduce"
+        style="@style/ExampleTitle" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/et_arg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="arg1,test path"
+        android:hint="@string/input_request_path" />
+    <View style="@style/SplitLine" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/input_request_value" />
+
+    <View style="@style/SplitLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/et_key2"
+            style="@style/LinearItem"
+            android:text="arg3"
+            android:hint="arg3" />
+
+        <EditText
+            android:id="@+id/et_value2"
+            style="@style/LinearItem"
+            android:text="arg3 test"
+            android:hint="arg3" />
+
+    </LinearLayout>
+    <View style="@style/SplitLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/et_key3"
+            style="@style/LinearItem"
+            android:hint="Key"
+            android:text="arg2" />
+
+        <EditText
+            android:id="@+id/et_value3"
+            style="@style/LinearItem"
+            android:text="arg2 Test Query"
+            android:hint="arg2 Test Query" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sure" />
+
+    <include layout="@layout/layout_result" />
+
+</LinearLayout>
