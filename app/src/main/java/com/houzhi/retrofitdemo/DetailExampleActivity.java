@@ -8,8 +8,9 @@ import com.houzhi.retrofitdemo.fragment.ExampleBodyFragment;
 import com.houzhi.retrofitdemo.fragment.ExampleFiledFragment;
 import com.houzhi.retrofitdemo.fragment.ExampleHeaderFragment;
 import com.houzhi.retrofitdemo.fragment.ExampleManipulationFragment;
+import com.houzhi.retrofitdemo.fragment.ExampleMethodFragment;
 import com.houzhi.retrofitdemo.fragment.ExampleMultiPartFragment;
-import com.houzhi.retrofitdemo.fragment.ExampleRequestMethodFragment;
+import com.houzhi.retrofitdemo.fragment.ExampleSyncFragment;
 
 public class DetailExampleActivity extends AppCompatActivity implements Constants {
 
@@ -25,6 +26,7 @@ public class DetailExampleActivity extends AppCompatActivity implements Constant
                 fragment = new ExampleFiledFragment();
                 break;
             case EXAMPLE_MULTIPART:
+                //with multi part
                 fragment = new ExampleMultiPartFragment();
                 break;
             case EXAMPLE_HEADER_MANIPULATION:
@@ -34,10 +36,13 @@ public class DetailExampleActivity extends AppCompatActivity implements Constant
                 fragment = new ExampleBodyFragment();
                 break;
             case EXAMPLE_REQUEST_METHOD:
-                fragment = new ExampleRequestMethodFragment();
+                fragment = new ExampleMethodFragment();
                 break;
             case EXAMPLE_URL_MANIPULATION:
                 fragment = new ExampleManipulationFragment();
+                break;
+            case EXAMPLE_SYNCHRONOUS:
+                fragment = new ExampleSyncFragment();
                 break;
         }
         getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();

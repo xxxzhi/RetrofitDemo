@@ -10,12 +10,16 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements Constants {
 
-    @OnClick({R.id.bt_request_method, R.id.bt_url_manipulation, R.id.bt_request_body, R.id.bt_form_encode,
+    @OnClick({R.id.bt_introduce, R.id.bt_request_method, R.id.bt_url_manipulation, R.id.bt_request_body, R.id.bt_form_encode,
             R.id.bt_multipart,
             R.id.bt_header_manipulation, R.id.bt_sync})
     public void click(View v) {
         int id = EXAMPLE_REQUEST_METHOD;
         switch (v.getId()) {
+            case R.id.bt_introduce:
+                Intent intent = new Intent(this, IntroduceActivity.class);
+                startActivity(intent);
+                return;
             case R.id.bt_request_method:
                 id = EXAMPLE_REQUEST_METHOD;
                 break;

@@ -12,14 +12,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/bt_get"
-            android:text="GET"
+            android:id="@+id/bt_sync"
+            android:text="Sync"
             style="@style/LinearItem" />
 
         <Button
-            android:id="@+id/bt_post"
+            android:id="@+id/bt_async"
             style="@style/LinearItem"
-            android:text="POST" />
+            android:text="Async" />
     </LinearLayout>
 
     <include layout="@layout/layout_result" />

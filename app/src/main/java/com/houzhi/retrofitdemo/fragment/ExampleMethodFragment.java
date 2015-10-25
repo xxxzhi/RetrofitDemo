@@ -14,7 +14,7 @@ import retrofit.Call;
 /**
  * @author houzhi
  */
-public class ExampleRequestMethodFragment extends BaseRequestExampleFragment {
+public class ExampleMethodFragment extends BaseRequestExampleFragment {
     Call tCall = null;
 
 

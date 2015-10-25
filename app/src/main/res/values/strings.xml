@@ -23,4 +23,9 @@
 
     <string name="multipart_introduce">使用Part范例</string>
     <string name="body_introduce">使用body 添加参数，把Args作为Body</string>
+    <string name="introduce">简介说明</string>
+    <string name="title_activity_introduce">IntroduceActivity</string>
+
+    <string name="app_introduce">这个Demo用Retrofit相关的API访问httpbin(http://httpbin.org)网站,并且利用GsonConverterFactory将返回值转换为对象，
+        用于展示Retrofit的相关功能。\n（默认情况下，是返回ResponseBody,见HttpbinService说明）</string>
 </resources>

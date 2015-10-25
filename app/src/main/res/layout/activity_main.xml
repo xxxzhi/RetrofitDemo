@@ -11,6 +11,15 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/bt_introduce"
+            style="@style/Item"
+            android:text="@string/introduce" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <Button
             android:id="@+id/bt_request_method"
             style="@style/Item"
             android:text="REQUEST METHOD" />
@@ -43,8 +52,8 @@
         <Button
             android:id="@+id/bt_sync"
             style="@style/Item"
-            android:visibility="gone"
-            android:text="SYNCHRONOUS VS. ASYNCHRONOUS" />
+            android:text="SYNCHRONOUS VS. ASYNCHRONOUS"
+            android:visibility="visible" />
     </LinearLayout>
 
 </ScrollView>

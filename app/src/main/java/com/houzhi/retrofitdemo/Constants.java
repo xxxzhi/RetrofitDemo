@@ -7,6 +7,10 @@ public interface Constants {
     int EXAMPLE_REQUEST_METHOD = 1;
     int EXAMPLE_URL_MANIPULATION = 2;
     int EXAMPLE_REQUEST_BODY = 3;
+
+    /**
+     * form with filed
+     */
     int EXAMPLE_FORM_ENCODE = 4;
     int EXAMPLE_HEADER_MANIPULATION = 5;
     int EXAMPLE_SYNCHRONOUS = 6;

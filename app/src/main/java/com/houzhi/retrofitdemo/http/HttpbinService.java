@@ -4,6 +4,7 @@ package com.houzhi.retrofitdemo.http;
 import com.houzhi.retrofitdemo.model.Args;
 import com.houzhi.retrofitdemo.model.HttpbinRequest;
 import com.squareup.okhttp.RequestBody;
+import com.squareup.okhttp.ResponseBody;
 
 import java.util.Map;
 
@@ -26,6 +27,10 @@ import retrofit.http.QueryMap;
  * Created by houzhi on 15-10-20.
  */
 public interface HttpbinService {
+
+    @GET("/get?arg1=hello")
+    Call<ResponseBody> testGetResponseBody();
+
 
     @GET("/get?arg1=hello")
     Call<HttpbinRequest> testGet();
